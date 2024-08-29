@@ -7,7 +7,7 @@ type Props = {}
 export default function ProjectsSection({}: Props) {
   return (
     <div id="projects" className="">
-      <p className="section__text__p1">Browse My Recent</p>
+      <p className="section__text__p1">Browse My Recent Projects</p>
 
       <h1 className="title">Projects</h1>
 
