@@ -11,7 +11,7 @@ export default function Home() {
       <ProfileSection />
       <AboutSection />
       <ExperienceSection />
-      <div className=" m-2">
+      <div className=" m-2 overflow-hidden md:px-5">
         <ProjectsSection />
       </div>
       <ContactInfoSection />

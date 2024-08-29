@@ -19,7 +19,7 @@ export default function ProjectCard({
   const router = useRouter()
 
   const bigCard = (
-    <div className=" color-container border-gray-300 shadow-lg border rounded-2xl cursor-pointer md:p-5 bg-white text-center min-w-[400px] min-h-[700px] flex flex-col items-center justify-around ">
+    <div className=" color-container border-gray-300 shadow-lg border rounded-2xl cursor-pointer md:p-5 bg-white text-center min-w-[200px] max-w-[400px] min-h-[700px] flex flex-col items-center justify-around ">
       <div className="">
         <img
           src={image}

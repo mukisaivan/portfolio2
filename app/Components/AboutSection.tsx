@@ -15,7 +15,7 @@ export default function AboutSection({}: Props) {
         <div className="">
           <img
             width={1000}
-            height={400}
+            height={200}
             src="./assets/cool.jpg"
             alt="Profile picture"
             className="about-pic"
@@ -24,7 +24,7 @@ export default function AboutSection({}: Props) {
 
         <div className="flex flex-col justify-center">
           <div className="mr-3 justify-center items-center flex gap-4 mb-2">
-            <div className="items-center flex justify-center flex-col p-5 border rounded-xl border-black">
+            <div className="items-center flex justify-center flex-col p-5 border rounded-xl border-black min-h-[350px] md:min-h-[200px]">
               <img
                 height={50}
                 width={50}
@@ -36,12 +36,12 @@ export default function AboutSection({}: Props) {
               <h3>Experience</h3>
 
               <p className=" flex text-center">
-                3 years Full Stack Mobile Development, Web Development & Machine
+                2 years Full Stack Mobile Development, Web Development & Machine
                 Learning / AI
               </p>
             </div>
 
-            <div className=" items-center flex justify-center flex-col p-5 border rounded-xl border-black">
+            <div className=" items-center flex justify-center flex-col p-5 border rounded-xl border-black min-h-[350px] md:min-h-[200px]">
               <img
                 height={50}
                 width={50}
@@ -58,7 +58,7 @@ export default function AboutSection({}: Props) {
             </div>
           </div>
 
-          <div className="text-container text-center mx-3 p-5">
+          <div className="md:text-center  text-start mx-3 p-5">
             <p>
               Skilled Flutter and Firebase developer with 3 years of experience
               in building efficient, scalable, and user-friendly mobile

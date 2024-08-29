@@ -12,7 +12,7 @@ export default function ContactInfoSection({}: Props) {
 
       <h1 className="title">Contact Me</h1>
 
-      <div className="contact-info-upper-container">
+      <div className="contact-info-upper-container flex gap-2">
         <div className="contact-info-container">
           <img
             height={30}
@@ -28,8 +28,8 @@ export default function ContactInfoSection({}: Props) {
 
         <div className="contact-info-container">
           <img
-            height={30}
-            width={30}
+            height={20}
+            width={20}
             src="/assets/linkedin.png"
             alt="LinkedIn icon"
             className="icon contact-icon"
