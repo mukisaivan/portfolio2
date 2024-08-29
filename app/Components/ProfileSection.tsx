@@ -11,7 +11,7 @@ export default function ProfileSection({}: Props) {
         <div className="section__pic-container">
           <Image
             width={400}
-            height={400}
+            height={600}
             src={"/assets/profilepic.jpg"}
             alt="Mukisa Ivan profile picture"
             className="profile-pic"
