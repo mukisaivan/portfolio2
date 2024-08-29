@@ -1,3 +1,4 @@
+"use client"
 import React from "react"
 
 type Props = {}
@@ -8,12 +9,10 @@ export default function ProfileSection({}: Props) {
       <section id="profile">
         <div className="section__pic-container">
           <img
-            src="./assets/profilepic.jpg"
+            src={"/assets/profilepic.jpg"}
             alt="Mukisa Ivan profile picture"
             className="profile-pic"
-          >
-            {" "}
-          </img>
+          />
         </div>
 
         <div className="section__text">
@@ -21,11 +20,9 @@ export default function ProfileSection({}: Props) {
 
           <h1 className="title">Mukisa Ivan</h1>
 
-          <p className="section__text__p2">
-            SoftWare Developer & Data Scientist
-          </p>
+          <p className=" text-nowrap">Software Developer & Data Scientist</p>
 
-          <div className="btn-container">
+          <div className="btn-container p-5">
             <button
               className="btn btn-color-2"
               onClick={() => window.open("./assets/Mukisa_Ivan_CV.pdf")}
@@ -34,9 +31,7 @@ export default function ProfileSection({}: Props) {
             </button>
             <button
               className="btn btn-color-1"
-              onClick={() => {
-                window.location.hash = "#contact"
-              }}
+              onClick={() => (window.location.href = "#contact")}
             >
               Contact Info
             </button>
@@ -44,6 +39,8 @@ export default function ProfileSection({}: Props) {
 
           <div id="socials-container">
             <img
+              height={80}
+              width={40}
               src="./assets/linkedin.png"
               alt="My LinkedIn profile"
               className="icon"
@@ -54,6 +51,8 @@ export default function ProfileSection({}: Props) {
             />
 
             <img
+              height={80}
+              width={40}
               src="./assets/github.png"
               alt="My Github profile"
               className="icon"
@@ -63,6 +62,8 @@ export default function ProfileSection({}: Props) {
             />
 
             <img
+              height={50}
+              width={50}
               src="./assets/whatsapsvg.svg"
               alt="WhatsApp"
               className="icon"

@@ -1,9 +1,16 @@
+"use client"
+
 import React from "react"
 
 type Props = {}
 
 export default function HambugerNavBar({}: Props) {
-  function toggleMenu() {}
+  function toggleMenu() {
+    const menu = document.querySelector(".menu-links")
+    const icon = document.querySelector(".hamburger-icon")
+    menu?.classList.toggle("open")
+    icon?.classList.toggle("open")
+  }
 
   return (
     <nav id="hamburger-nav">

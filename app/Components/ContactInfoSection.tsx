@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import React from "react"
 
@@ -5,7 +7,7 @@ type Props = {}
 
 export default function ContactInfoSection({}: Props) {
   return (
-    <Link href="#contact" id="contact">
+    <div id="contact">
       <p className="section__text__p1">Get in Touch</p>
 
       <h1 className="title">Contact Me</h1>
@@ -13,13 +15,12 @@ export default function ContactInfoSection({}: Props) {
       <div className="contact-info-upper-container">
         <div className="contact-info-container">
           <img
-            src="./assets/email.png"
+            height={30}
+            width={30}
+            src="/assets/email.png"
             alt="Email icon"
             className="icon contact-icon email-icon"
-          >
-            {" "}
-          </img>
-
+          />
           <p>
             <a href="mailto:mukisaivan340@gmail.com">mukisaivan340@gmail.com</a>
           </p>
@@ -27,18 +28,19 @@ export default function ContactInfoSection({}: Props) {
 
         <div className="contact-info-container">
           <img
-            src="./assets/linkedin.png"
+            height={30}
+            width={30}
+            src="/assets/linkedin.png"
             alt="LinkedIn icon"
             className="icon contact-icon"
-          >
-            {" "}
-          </img>
-
+          />
           <p>
-            <a href="https://www.linkedin.com">LinkedIn</a>
+            <Link href="https://www.linkedin.com" legacyBehavior>
+              <a>LinkedIn</a>
+            </Link>
           </p>
         </div>
       </div>
-    </Link>
+    </div>
   )
 }

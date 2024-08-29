@@ -1,9 +1,20 @@
-import Image from "next/image"
+import AboutSection from "./Components/AboutSection"
+import ContactInfoSection from "./Components/ContactInfoSection"
+import ExperienceSection from "./Components/ExperienceSection"
+import OverrallWrapper from "./Components/OverrallWrapper"
+import ProfileSection from "./Components/ProfileSection"
+import ProjectsSection from "./Components/ProjectsSection"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      some
-    </main>
+    <div>
+      <ProfileSection />
+      <AboutSection />
+      <ExperienceSection />
+      <div className=" m-2">
+        <ProjectsSection />
+      </div>
+      <ContactInfoSection />
+    </div>
   )
 }
