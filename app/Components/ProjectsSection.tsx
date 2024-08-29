@@ -24,25 +24,31 @@ export default function ProjectsSection({}: Props) {
           name={"Zion Ecommerce Web App"}
           image={"/assets/ecommercewebsite.png"}
           githublink={"https://github.com/mukisaivan/zionvitenge2"}
-          demolink={""}
+          demolink={
+            "https://drive.google.com/file/d/1FvUWne7x_qzdJ0CUrnyRXHhloCGuvlfc/view?usp=drive_link"
+          }
         />
         <ProjectCard
           name={"Bank Queue Management Tool"}
           image={"/assets/queuepic.png"}
           githublink={"https://github.com/mukisaivan/queueingtool"}
-          demolink={""}
+          demolink={
+            "https://docs.google.com/presentation/d/1V28yPU7rsEg96pW57ET6IBx3Iyg7yKeE/edit?usp=drive_link&ouid=112856887003994312357&rtpof=true&sd=true"
+          }
         />
         <ProjectCard
           name={"WhatsApp Clone App"}
           image={"/assets/whatsappclone.png"}
           githublink={"https://github.com/mukisaivan/whatsappclone1"}
-          demolink={""}
+          demolink={
+            "https://drive.google.com/file/d/1q3hMq5mafjL0qfKI8Vj_ZDWdlzdVFKbI/view?usp=drive_link"
+          }
         />
         <ProjectCard
           name={"Zion E-commerce Mobile App"}
           image={"/assets/ecommerceproj.png"}
           githublink={"https://github.com/mukisaivan/zion"}
-          demolink={""}
+          demolink={"https://github.com/mukisaivan/zion"}
         />
       </div>
 
