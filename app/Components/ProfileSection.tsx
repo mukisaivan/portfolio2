@@ -19,7 +19,7 @@ export default function ProfileSection({}: Props) {
         </div>
 
         <div className="section__text">
-          <p className="section__text__p1">Hello, I'm</p>
+          <p className="section__text__p1">Hello, I&apos;m</p>
 
           <h1 className="title">Mukisa Ivan</h1>
 
