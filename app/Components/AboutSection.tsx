@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import React from "react"
 
 type Props = {}
@@ -13,10 +14,10 @@ export default function AboutSection({}: Props) {
 
       <div className="flex gap-6  p-6">
         <div className="">
-          <img
+          <Image
             width={1000}
             height={200}
-            src="./assets/cool.jpg"
+            src="/assets/cool.jpg"
             alt="Profile picture"
             className="about-pic"
           />
@@ -25,10 +26,10 @@ export default function AboutSection({}: Props) {
         <div className="flex flex-col justify-center">
           <div className="mr-3 justify-center items-center flex gap-4 mb-2">
             <div className="items-center flex justify-center flex-col p-5 border rounded-xl border-black min-h-[350px] md:min-h-[200px]">
-              <img
+              <Image
                 height={50}
                 width={50}
-                src="./assets/experience.png"
+                src="/assets/experience.png"
                 alt="Experience icon"
                 className="icon"
               />
@@ -42,10 +43,10 @@ export default function AboutSection({}: Props) {
             </div>
 
             <div className=" items-center flex justify-center flex-col p-5 border rounded-xl border-black min-h-[350px] md:min-h-[200px]">
-              <img
+              <Image
                 height={50}
                 width={50}
-                src="./assets/education.png"
+                src="/assets/education.png"
                 alt="Education icon"
                 className="icon"
               />
@@ -72,10 +73,10 @@ export default function AboutSection({}: Props) {
         </div>
       </div>
 
-      <img
+      <Image
         height={50}
         width={50}
-        src="./assets/arrow.png"
+        src="/assets/arrow.png"
         alt="Arrow icon"
         className="icon arrow cursor-pointer"
         onClick={() => (window.location.href = "./#experience")}

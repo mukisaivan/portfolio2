@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image"
 import React from "react"
 
 type Props = {}
@@ -8,7 +9,9 @@ export default function ProfileSection({}: Props) {
     <div>
       <section id="profile">
         <div className="section__pic-container">
-          <img
+          <Image
+            width={400}
+            height={400}
             src={"/assets/profilepic.jpg"}
             alt="Mukisa Ivan profile picture"
             className="profile-pic"
@@ -25,7 +28,7 @@ export default function ProfileSection({}: Props) {
           <div className="btn-container p-5">
             <button
               className="btn btn-color-2"
-              onClick={() => window.open("./assets/Mukisa_Ivan_CV.pdf")}
+              onClick={() => window.open("/assets/Mukisa_Ivan_CV.pdf")}
             >
               Download CV
             </button>
@@ -38,10 +41,10 @@ export default function ProfileSection({}: Props) {
           </div>
 
           <div id="socials-container">
-            <img
+            <Image
               height={80}
               width={40}
-              src="./assets/linkedin.png"
+              src="/assets/linkedin.png"
               alt="My LinkedIn profile"
               className="icon"
               onClick={() =>
@@ -50,10 +53,10 @@ export default function ProfileSection({}: Props) {
               }
             />
 
-            <img
+            <Image
               height={80}
               width={40}
-              src="./assets/github.png"
+              src="/assets/github.png"
               alt="My Github profile"
               className="icon"
               onClick={() =>
@@ -61,10 +64,10 @@ export default function ProfileSection({}: Props) {
               }
             />
 
-            <img
+            <Image
               height={50}
               width={50}
-              src="./assets/whatsapsvg.svg"
+              src="/assets/whatsapsvg.svg"
               alt="WhatsApp"
               className="icon"
               onClick={() =>

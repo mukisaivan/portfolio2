@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 
@@ -14,7 +15,7 @@ export default function ContactInfoSection({}: Props) {
 
       <div className="contact-info-upper-container flex gap-2">
         <div className="contact-info-container">
-          <img
+          <Image
             height={30}
             width={30}
             src="/assets/email.png"
@@ -27,7 +28,7 @@ export default function ContactInfoSection({}: Props) {
         </div>
 
         <div className="contact-info-container">
-          <img
+          <Image
             height={20}
             width={20}
             src="/assets/linkedin.png"

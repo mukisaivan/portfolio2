@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useRouter } from "next/navigation"
 import React from "react"
 
@@ -21,7 +22,9 @@ export default function ProjectCard({
   const bigCard = (
     <div className=" color-container border-gray-300 shadow-lg border rounded-2xl cursor-pointer md:p-5 bg-white text-center min-w-[200px] max-w-[400px] min-h-[700px] flex flex-col items-center justify-around ">
       <div className="">
-        <img
+        <Image
+          width={500}
+          height={400}
           src={image}
           alt="Project 1"
           className=" rounded-xl h-[400px] w-[500px] object-fill hover:scale-140 "
@@ -52,7 +55,9 @@ export default function ProjectCard({
   const smallCard = (
     <div className=" text-xs color-container border-gray-300 shadow-lg border rounded-2xl cursor-pointer bg-white text-center min-w-[180px] min-h-[350px] flex flex-col items-center justify-around p-3 ">
       <div className="">
-        <img
+        <Image
+          height={200}
+          width={180}
           src={image}
           alt="Project 1"
           className=" rounded-xl h-[200px] w-[180px] object-fill hover:scale-140 "

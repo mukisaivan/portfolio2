@@ -28,7 +28,7 @@ export default function Footer({}: Props) {
         </div>
       </nav>
 
-      <p className=" text-center h-20 mt-0">
+      <p className=" text-center h-20 mt-4 md:mt-0">
         Copyright &#169; 2024 Mukisa Ivan. All Rights Reserved.
       </p>
     </>

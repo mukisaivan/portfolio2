@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image"
 import React from "react"
 
 type Props = {
@@ -9,10 +10,10 @@ type Props = {
 export default function ExperienceComponent({ name, status }: Props) {
   return (
     <article>
-      <img
+      <Image
         height={30}
         width={30}
-        src="./assets/checkmark.png"
+        src="/assets/checkmark.png"
         alt="Experience icon"
         className="icon"
       />

@@ -1,6 +1,7 @@
 "use client"
 import React from "react"
 import ProjectCard from "./ProjectCard"
+import Image from "next/image"
 
 type Props = {}
 
@@ -52,10 +53,10 @@ export default function ProjectsSection({}: Props) {
         />
       </div>
 
-      <img
+      <Image
         height={30}
         width={30}
-        src="./assets/arrow.png"
+        src="/assets/arrow.png"
         alt="Arrow icon"
         className="icon arrow"
         onClick={() => (window.location.href = "./#contact")}

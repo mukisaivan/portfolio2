@@ -1,6 +1,7 @@
 "use client"
 import React from "react"
 import ExperienceComponent from "./ExperienceComponent"
+import Image from "next/image"
 
 type Props = {}
 
@@ -46,10 +47,10 @@ export default function ExperienceSection({}: Props) {
         </div>
       </div>
 
-      <img
+      <Image
         height={30}
         width={30}
-        src="./assets/arrow.png"
+        src="/assets/arrow.png"
         alt="Arrow icon"
         className="icon arrow"
         onClick={() => (window.location.href = "./#projects")}
