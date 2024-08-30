@@ -25,7 +25,7 @@ export default function AboutSection({}: Props) {
 
         <div className="flex flex-col justify-center">
           <div className="mr-3 justify-center items-center flex gap-4 mb-2">
-            <div className="items-center flex justify-center flex-col p-5 border rounded-xl border-black min-h-[350px] md:min-h-[200px]">
+            <div className="items-center flex justify-center flex-col p-5 border rounded-xl border-black min-h-[350px] md:min-h-[200px] lg:max-w-[400px]">
               <Image
                 height={50}
                 width={50}
@@ -42,7 +42,7 @@ export default function AboutSection({}: Props) {
               </p>
             </div>
 
-            <div className=" items-center flex justify-center flex-col p-5 border rounded-xl border-black min-h-[350px] md:min-h-[200px]">
+            <div className=" items-center flex justify-center flex-col p-5 border rounded-xl border-black min-h-[350px] md:min-h-[200px] lg:max-w-[400px]">
               <Image
                 height={50}
                 width={50}

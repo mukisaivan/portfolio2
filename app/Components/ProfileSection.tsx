@@ -8,13 +8,22 @@ export default function ProfileSection({}: Props) {
   return (
     <div>
       <section id="profile">
-        <div className="section__pic-container">
+        <div className=" my-auto mx-0 flex justify-center  p-4 md:hidden">
           <Image
-            width={400}
-            height={600}
+            width={200}
+            height={400}
             src={"/assets/profilepic.jpg"}
             alt="Mukisa Ivan profile picture"
-            className="profile-pic"
+            className=" rounded-full object-cover "
+          />
+        </div>
+        <div className=" my-auto mx-0 justify-center  p-4 hidden md:flex">
+          <Image
+            width={400}
+            height={400}
+            src={"/assets/profilepic.jpg"}
+            alt="Mukisa Ivan profile picture"
+            className=" rounded-full object-cover "
           />
         </div>
 
