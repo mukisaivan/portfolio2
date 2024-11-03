@@ -23,6 +23,7 @@ export default function ExperienceSection({}: Props) {
               <ExperienceComponent name={"Tailwind"} />
               <ExperienceComponent name={"JavaScript"} />
               <ExperienceComponent name={"React Js"} />
+              <ExperienceComponent name={"React Native"} />
               <ExperienceComponent name={"TypeScript"} />
               <ExperienceComponent name={"Flutter"} />
             </div>
